@@ -1,0 +1,53 @@
+package work.home._1;
+
+Option 1: Using class only
+
+public class NameAndAddress {
+
+	public static void main(String[] args) {
+	System.out.println("My name is Arif Mahmud");
+	System.out.println("My address is Queens Village");
+
+	}
+
+}
+Option 2:Using Instance of a class
+
+public class NameAndAddress {
+	String name;
+	String address;
+
+	public static void main(String[] args) {
+	
+               NameAndAddress myNameAndAddress= new NameAndAddress();
+        
+        myNameAndAddress.name= "Arif Mahmud";
+        myNameAndAddress.address="Queens Village";
+       
+        System.out.println(myNameAndAddress.name  );
+        System.out.println( myNameAndAddress.address);
+	
+	}
+}
+
+Option 3: Using Instance of a class invoking method.
+
+public class NameAndAddress {
+	String name;
+	String address;
+
+	public void getName() {System.out.println(name);}
+	public void getAddress() {System.out.println(address);}
+	
+	public static void main(String[] args) {
+	
+		NameAndAddress myNameAndAddress= new NameAndAddress();
+        
+	myNameAndAddress.name= "Arif Mahmud";
+        myNameAndAddress.address="Queens Village";
+        
+        myNameAndAddress.getName();
+        myNameAndAddress.getAddress();
+	}
+
+}
