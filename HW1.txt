@@ -1,6 +1,6 @@
 package work.home._1;
 
-Option 1: Using class only
+Option 1: Using class Only
 
 public class NameAndAddress {
 
